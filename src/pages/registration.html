@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen">
+  <title>Note | Register</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <div class="fm-group">
+        <form >
+          <div class="fm-head">
+            <h1> Register</h1>
+          </div>
+          <div class="fm-item">
+            <label for="email" class="fm-label">Email</label>
+            <input type="email" class="fm-iput" name="email" required>
+          </div>
+          <div class="fm-item">
+            <label for="password" class="fm-label">Password</label>
+            <input type="password" class="fm-iput" name="password" required id="password">
+          </div>
+          <div class="fm-item">
+            <label for="gender" class="fm-label">Gender</label>
+             <select name="gender" id="gender" class="fm-select" name="gender">
+              <option value="select" > Select</option>
+              <option value="male" > Male </option>
+              <option value="female" > Female </option>
+             </select>
+          </div>
+          <div class="fm-item">
+            <label for="track" class="fm-label">Track</label>
+             <select name="track" id="track" class="fm-select" name="track">
+              <option value="select" > Select</option>
+              <option value="Nodejs" > Nodejs </option>
+              <option value="HTML" > HTML </option>
+              <option value="React" > React </option>
+             </select>
+          </div>
+           <div class="fm-btn">
+            <input type="submit" value="Signup" class="btn" id="signup">
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../js/utils.js" > </script>
+</body>
+</html>
