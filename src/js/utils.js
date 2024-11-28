@@ -21,3 +21,23 @@ console.log(user)
     alert(error.message)
   }
 })
+
+const apiStatus = async () =>{
+  try{
+  const url = `${baseUrl}${routes.status}`;
+    const res = await fetch(url, {
+      method: "GET", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      }, 
+    });
+    const result = await res.json();
+    if(!res.ok){
+      throw new Error(result.error)
+    }   
+} catch (error) {
+  alert(error.message);
+  console.log(error)
+}
+}
+apiStatus();
