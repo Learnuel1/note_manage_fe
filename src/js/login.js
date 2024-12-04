@@ -22,8 +22,13 @@ const res = await fetch(url, {
 const result = await res.json() 
 if(!res.ok){
   throw new Error(result.error)
-} 
-console.log(result)
+}  
+const {accessToken, refreshToken} = result;
+const auth = {accessToken, refreshToken};
+ localStorage.setItem("auth", JSON.stringify(auth));
+ alert(result.message);
+ // redirect to dashboard
+ window.location = "../pages/dashboard.html"
   } catch (error) {
     alert(error.message)
   }
