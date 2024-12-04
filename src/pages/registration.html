@@ -16,11 +16,15 @@
           </div>
           <div class="fm-item">
             <label for="email" class="fm-label">Email</label>
-            <input type="email" class="fm-iput" name="email" required>
+            <input type="email" class="fm-input" name="email" id="email" required>
           </div>
           <div class="fm-item">
             <label for="password" class="fm-label">Password</label>
-            <input type="password" class="fm-iput" name="password" required id="password">
+            <input type="password" class="fm-input" name="password" required id="password">
+          </div>
+          <div class="fm-item">
+            <label for="name" class="fm-label">Name</label>
+            <input type="text" class="fm-input" name="name" required id="name">
           </div>
           <div class="fm-item">
             <label for="gender" class="fm-label">Gender</label>
@@ -42,10 +46,15 @@
            <div class="fm-btn">
             <input type="submit" value="Signup" class="btn" id="signup">
            </div>
+           <div class="fm-btn">
+            <span> already a member ? <a href="./login.html"> Login</a></span>
+            </div>
         </form>
       </div>
     </div>
   </div>
+  <script src="../api/noteapi.js"></script>
+  <script src="../api/routes.js"></script>
   <script src="../js/utils.js" > </script>
 </body>
 </html>

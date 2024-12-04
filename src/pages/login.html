@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Note | Login</title>
   <link rel="stylesheet" href="../css/index.css" type="text/css" media="screen">
+  <title>Note | Login</title>
 </head>
 <body>
-  
-  
+  <div class="wrapper">
+    <div class="content">
+      <div class="fm-group">
+        <form method="post">
+          <div class="fm-head">
+            <h1> Sign in</h1>
+          </div>
+          <div class="fm-item">
+            <label for="email" class="fm-label">Email</label>
+            <input type="email" class="fm-input" name="email" id="email" required>
+          </div>
+          <div class="fm-item">
+            <label for="password" class="fm-label">Password</label>
+            <input type="password" class="fm-input" name="password" required id="password">
+          </div>
+            
+           <div class="fm-btn">
+            <input type="submit" value="Sign in" class="btn" id="signin">
+           </div>
+           <div class="fm-btn">
+           <span> No account ? <a href="./registration.html"> Register</a></span>
+           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="../api/noteapi.js"></script>
+  <script src="../api/routes.js"></script>
+  <script src="../js/login.js" > </script>
 </body>
 </html>
