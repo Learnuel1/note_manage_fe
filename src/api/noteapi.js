@@ -6,7 +6,7 @@ const getUserAuth = () => {
 }
 const header = {
   "content-type": "application/json",
-  authorization: `bearer ${getUserAuth().accessToken}`
+  authorization: `bearer ${getUserAuth()?.accessToken}`
 }
 
 
