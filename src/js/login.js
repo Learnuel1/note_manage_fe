@@ -23,9 +23,11 @@ const result = await res.json()
 if(!res.ok){
   throw new Error(result.error)
 }  
-const {accessToken, refreshToken} = result;
+const {accessToken, refreshToken, name} = result;
 const auth = {accessToken, refreshToken};
+const userInfo = {name}
  localStorage.setItem("auth", JSON.stringify(auth));
+ localStorage.setItem("userInfo", JSON.stringify(userInfo));
  alert(result.message);
  // redirect to dashboard
  window.location = "../pages/dashboard.html"

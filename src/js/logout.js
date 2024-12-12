@@ -1,4 +1,5 @@
 const logout  = document.getElementById("logout");
+
 logout.addEventListener("click", async () => {
   try {
     // const url = `${baseUrl}${routes.logout}`;
@@ -39,7 +40,7 @@ const logoutUser = async () => {
     if(!res.ok){
       if(res.status === 401){
         const newToken = await genRefreshToken();
-        if(!newToken.error) await logoutUser()
+        if(!newToken.error) await logoutUser();
       }
       throw new Error(result.error)
     } 

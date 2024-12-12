@@ -4,6 +4,9 @@ const getUserAuth = () => {
   const auth = JSON.parse(localStorage.getItem("auth"));
   return auth;
 }
+getUserInfo = () =>{
+  return JSON.parse(localStorage.getItem("userInfo"));
+}
 const header = {
   "content-type": "application/json",
   authorization: `bearer ${getUserAuth()?.accessToken}`
