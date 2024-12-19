@@ -14,11 +14,12 @@
 body{
   background-color: var(--primary-color);
 }
-.container{
+.containers{
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 .main{
   height: inherit;
@@ -71,6 +72,96 @@ body{
   width: 160px;
   gap: 5px;
 }
-.btn{
+ 
+.btn{ 
+color: var(--primary-color);
+}
+
+.modal{
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(219, 215, 225, 0.6) ;
+  display: none;
+}
+.fm-modal{
 
 }
+.fm-note{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 0.5cm;
+}
+.heading h1{
+  text-align: center;
+  padding: 15px;
+  font-family: "ubuntu";
+  font-size: 24px;
+  color: var(--cta);
+}
+.fm-group{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.field{
+  font-family: "ubuntu";
+  font-weight: 100;
+}
+.fm-input{
+  padding: 2px;
+  font-size: 16px;
+  font-size: "ubuntu";
+  /* outline: none; */
+  outline-color: var(--secondary-color);
+}
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  color: var(--primary-color);
+}
+.btn{
+  background-color: var(--cta);
+  border-radius: 0.5cm;
+  border: 1.5px solid var(--cta);
+  padding: 5px 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.x{
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.show{
+  display: flex;
+}
+.b-content{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  overflow-x: scroll;
+}
+.table{
+  margin-top: 20px;
+  height: auto;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+ 

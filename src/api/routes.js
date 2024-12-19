@@ -3,5 +3,6 @@ const routes = {
   login: "/auth/login",
   register: "/account",
   logout: "/auth/logout",
-  refreshToken: "/auth/refreshtoken"
+  refreshToken: "/auth/refreshtoken",
+  note: "/note",
 }
